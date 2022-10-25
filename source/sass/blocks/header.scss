@@ -1,0 +1,97 @@
+.header {
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.header-wrapper {
+  padding: 30px 0 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+//стилизация логотипа и слогана
+.logo {
+  width: 215px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__image {
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.logo__description {
+  padding: 0 15px;
+}
+
+.logo__description span {
+  display: flex;
+}
+
+.logo__name {
+  font-family: $ff-heading-font;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: $color-alice-blue;
+  white-space: nowrap;
+}
+
+.logo__slogan {
+  font-family: $ff-heading-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+// стилизация контактов
+.header-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 68px;
+}
+
+.header-contacts__item {
+  width: 225px;
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts__icon {
+  margin-right: 15px;
+  margin-left: 30px;
+}
+
+.header-contacts__description {
+  color: $color-alice-blue;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+// силизация кнопок
+.header-button {
+  font-size: 14px;
+  line-height: 16px;
+  min-width: 160px;
+  color: $color-alice-blue;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 1px solid $color-alice-blue;
+  margin-right: 60px;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+
+

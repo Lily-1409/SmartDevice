@@ -1,0 +1,51 @@
+.promo-section {
+  position: relative;
+  background-color: $color-default-black;
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  z-index: -10;
+  color: $color-alice-blue;
+}
+
+.promo {
+  margin-left: 176px;
+  padding-top: 234px;
+}
+
+.promo__title {
+  font-family: $ff-heading-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.promo__description {
+  font-family: $ff-content-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.promo__button {
+  font-size: 18px;
+  line-height: 21px;
+  min-width: 360px;
+  color: $color-alice-blue;
+  padding: 15px 25px;
+  background-color: $color-deep-sky-blue;
+  margin-right: 60px;
+}

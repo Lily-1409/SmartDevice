@@ -28,20 +28,24 @@
                 <span class="logo__slogan">умные технологии</span>
               </div>
             </a>
-            <div class="header-contacts">
-              <a class="header-contacts__item" href="mailto:info@sd.ru">
-                <svg class="header-contacts__icon" height="21" width="20">
-                  <use xlink:href="img/sprite/sprite.svg#email-icon"></use>
-                </svg>
-                <span class="header-contacts__description">info@sd.ru</span>
+            <ul class="header-contacts">
+              <li class="header-contacts__item">
+                <a class="header-contacts__link" href="mailto:info@sd.ru">
+                  <svg class="header-contacts__icon" height="21" width="20">
+                    <use xlink:href="img/sprite/sprite.svg#email-icon"></use>
+                  </svg>
+                  <span class="header-contacts__description">info@sd.ru</span>
                 </a>
-              <a class="header-contacts__item" href="tel:+74950005252">
-                <svg class="header-contacts__icon"  height="21" width="20">
-                  <use xlink:href="img/sprite/sprite.svg#phone-icon"></use>
-                </svg>
-                <span class="header-contacts__description">+7 (495) 000 52 52</span>
-              </a>
-            </div>
+              </li>
+              <li class="header-contacts__item">
+                <a class="header-contacts__link" href="tel:+74950005252">
+                  <svg class="header-contacts__icon"  height="21" width="20">
+                    <use xlink:href="img/sprite/sprite.svg#phone-icon"></use>
+                  </svg>
+                  <span class="header-contacts__description">+7 (495) 000 52 52</span>
+                </a>
+              </li>
+            </ul>
             <button class="header-button btn">Заказать звонок</button>
           </div>
         </div>
@@ -274,7 +278,7 @@
               </label>
             </form>
           </div>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <button class="modal__close-btn btn-reset visually-hidden" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>

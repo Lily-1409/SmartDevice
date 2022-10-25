@@ -1,9 +1,8 @@
 .promo-section {
   position: relative;
   background-color: $color-default-black;
+  background-position: center;
   background-size: cover;
-  background-position: 50%;
-  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
   padding-top: 10px;
@@ -14,6 +13,14 @@
 .promo {
   margin-left: 176px;
   padding-top: 234px;
+
+  @media (max-width: 1023px) {
+    margin-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 0;
+  }
 }
 
 .promo__title {
@@ -27,6 +34,16 @@
   margin: 0;
   padding: 0;
   margin-bottom: 14px;
+
+  @media (max-width: 1023px) {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .promo__description {
@@ -38,14 +55,26 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+  max-width: 685px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .promo__button {
   font-size: 18px;
   line-height: 21px;
-  min-width: 360px;
+  min-width: 410px;
   color: $color-alice-blue;
   padding: 15px 25px;
   background-color: $color-deep-sky-blue;
-  margin-right: 60px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 270px;
+    padding: 10px 30px;
+  }
 }

@@ -114,54 +114,72 @@
           <div class="container">
             <h1 class="services__title">Smart Device предлагает следующие товары и услуги</h1>
             <ul class="services__list">
-              <li class="services__item">
-                <img class="services__image" src="/source/img/images-cards/card-background-1-desktop.jpg" srcset="/source/img/images-cards/card-background-1-desktop@2x.jpg 2x" width="350" height="650" alt="Производство печатных плат">
-                <h2 class="services__item-title">Производство печатных плат</h2>
-                <a class="services__item-link" href="#"></a>
+              <li class="services__item" href="#">
+                <a class="services__item-link">
+                  <img src="./img/images-cards/card-background-1-desktop.jpg" srcset="./img/images-cards/card-background-1-desktop.jpg" width="350" height="650">
+                  <h2 class="services__item-title">Производство печатных плат</h2>
+                  <svg height="5" width="10">
+                    <use xlink:href="img/sprite/sprite.svg#arrow-service"></use>
+                  </svg>
+               </a>
               </li>
               <li class="services__item">
-                <img class="services__image" src="/source/img/images-cards/card-background-2-desktop.jpg" srcset="/source/img/images-cards/card-background-2-desktop@2x.jpg 2x" width="350" height="650" alt="Производство печатных плат">
-                <h2 class="services__item-title">Монтаж печатных плат</h2>
-                <a  class="services__item-link" href="#"></a>
+                <a class="services__item-link" href="#"><img src="./img/images-cards/card-background-2-mobile.jpg" srcset="./img/images-cards/card-background-2-mobile@2x.jpg" width="270" height="250">
+                  <h2 class="services__item-title">Монтаж печатных плат</h2>
+                  <svg height="5" width="10">
+                    <use xlink:href="img/sprite/sprite.svg#arrow-service"></use>
+                  </svg>
+                </a>
               </li>
               <li class="services__item">
-                <img class="services__image" src="/source/img/images-cards/card-background-3-desktop.jpg" srcset="/source/img/images-cards/card-background-3-desktop@2x.jpg 2x" width="350" height="650" alt="Производство печатных плат">
-                <h2 class="services__item-title">Комплектующие для светотехники</h2>
-                <a  class="services__item-link" href="#"></a>
+                <a class="services__item-link" href="#">
+                  <img src="./img/images-cards/card-background-1-desktop.jpg" srcset="./img/images-cards/card-background-1-desktop.jpg" width="350" height="650">
+                  <h2 class="services__item-title">Комплектующие для светотехники</h2>
+                  <svg height="5" width="10">
+                    <use xlink:href="img/sprite/sprite.svg#arrow-service"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </section>
         <section class="questions">
           <div class="container">
-            <h1 class="questions__title">Остались вопросы? Задайте их нам!</h1>
-            <span class="questions__description">Мы проконсультируем Вас бесплатно</span>
-            <div class="questions-form">
-              <form action="" method="post">
-                <div class="questions-form__wrapper">
-                  <div class="questions-form__item">
-                    <label for="input-1">Имя</label>
-                    <input type="text" id="input-1" placeholder="Имя">
-                  </div>
-                  <div class="questions-form__item">
-                    <label for="input-2">Телефон</label>
-                    <input type="number" id="input-2" placeholder="Телефон">
-                  </div>
+            <div class="questions-wrapper">
+              <img class="questions__image" src="./img/paper_airplane.png" srcset="./img/paper_airplane@2x.png 2x" width="510" height="285" alt="Письмо">
+              <div class="questions__form-wrapper">
+                <h1 class="questions__title">Остались вопросы? Задайте их нам!</h1>
+                <p class="questions__description">Мы проконсультируем Вас бесплатно</p>
+                <div class="questions-form">
+                  <form action="" method="post">
+                    <div class="questions-form__wrapper">
+                      <div class="questions-form__name">
+                        <label for="input-1">Имя</label>
+                        <input type="text" id="input-1" placeholder="Имя">
+                      </div>
+                      <div class="questions-form__phone">
+                        <label for="input-2">Телефон</label>
+                        <input type="number" id="input-2" placeholder="Телефон">
+                      </div>
+                    </div>
+                    <div class="questions-form__textarea">
+                      <label for="questions">Ваш вопрос</label>
+                      <textarea id="questions" placeholder="Ваш вопрос"></textarea>
+                    </div>
+                    <div class="questions-form__submit">
+                      <div class="questions-form__button">
+                        <button>Задать вопрос</button>
+                      </div>
+                      <div class="questions-form__checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span>Я согласен на обработку персональных данных</span>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div class="questions-form__textarea">
-                  <label for="questions">Ваш вопрос</label>
-                  <textarea id="questions" placeholder="Ваш вопрос"></textarea>
-                </div>
-                <div class="questions-form__submit">
-                  <div class="questions-form__button">
-                    <button>Задать вопрос</button>
-                  </div>
-                  <label>
-                    <input type="checkbox">
-                    <span>Я согласен на обработку персональных данных</span>
-                  </label>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </section>

@@ -1,11 +1,17 @@
 .services {
   background-color: $color-black-pearl;
-  padding-top: 70px;
+  padding-top: 66px;
   padding-bottom: 90px;
-}
 
-.services__item {
-  position: relative;
+  @media (max-width: 1023px) {
+    padding-top: 56px;
+    padding-bottom: 75px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 86px;
+  }
 }
 
 .services__title {
@@ -14,45 +20,93 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
+  letter-spacing: -0.005em;
   color: $color-default-white;
   margin: 0;
   padding: 0;
 }
 
-.services__list {
+.services-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding: 50px 0;
+  padding: 53px 0 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 85px;
 
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 
-.services__item {
+.services-item {
+  background-image: url('../../img/promo-background-desktop.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 350px;
   height: 650px;
+  position: relative;
+
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+    width: 670px;
+    height: 250px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    width: 270px;
+    height: 250px;
+  }
 }
 
-.services__item-link {
-  background-position: center;
-  background-size: cover;
-  width: 1000px;
-  height: 100px;
+.services-item-one {
+  background-position: 16% 0;
+
+  @media (max-width: 1023px) {
+    background-position: center;
+  }
+}
+
+.services-item-two {
+  background-position: 46% 0;
+
+  @media (max-width: 1023px) {
+    background-position: 23% 0;
+  }
+}
+
+.services-item-three {
+  background-position: 79% 0;
+
+  @media (max-width: 1023px) {
+    background-position: 84% 0;
+  }
 }
 
 .services__item-title {
-  top: 0;
-  left: 0;
-  padding-top: 50px;
+  font-family: $ff-heading-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 30px;
   padding-left: 40px;
   color: $color-default-white;
-  max-width: 230px;
+  max-width: 212px;
   position: absolute;
+
+  @media (max-width: 1023px) {
+    padding-top: 40px;
+    padding-left: 45px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
 }
 
 .services__item-link::before {
@@ -65,6 +119,11 @@
   z-index: 5;
   bottom: 0;
   right: 0;
+
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .services__item-link svg {

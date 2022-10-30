@@ -45,8 +45,7 @@
   background-image: url('../../img/promo-background-desktop.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  width: 350px;
-  height: 650px;
+  min-height: 650px;
   position: relative;
 
   @media (max-width: 1023px) {

@@ -930,7 +930,7 @@ button,
   line-height: 34px;
   margin: 0;
   padding: 0;
-  margin-bottom: 47px;
+  margin-bottom: 55px;
   max-width: 670px;
 }
 
@@ -1022,8 +1022,8 @@ button,
 .about__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 152px auto;
-  grid-template-columns: 152px auto;
+  -ms-grid-columns: 150px auto;
+  grid-template-columns: 150px auto;
   gap: 98px;
 }
 
@@ -1127,6 +1127,8 @@ button,
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   padding-top: 30px;
   padding-left: 40px;
@@ -1155,8 +1157,8 @@ button,
 }
 
 .questions {
-  background-image: -o-linear-gradient(311deg, #2b648f 0%, #2b648f 33.5%, #2b648f 33.5%, #00B3FF 33.5%, #00B3FF 100%);
-  background-image: linear-gradient(139deg, #2b648f 0%, #2b648f 33.5%, #2b648f 33.5%, #00B3FF 33.5%, #00B3FF 100%);
+  background-image: -o-linear-gradient(311deg, #2b648f 0%, #2b648f 31.5%, #2b648f 31.5%, #00B3FF 31.5%, #00B3FF 100%);
+  background-image: linear-gradient(139deg, #2b648f 0%, #2b648f 31.5%, #2b648f 31.5%, #00B3FF 31.5%, #00B3FF 100%);
 }
 
 .questions-wrapper {
@@ -1296,6 +1298,7 @@ button,
   color: #ffffff;
   min-width: 265px;
   margin-right: 50px;
+  letter-spacing: 0.05em;
 }
 
 .questions-form__checkbox input[type=checkbox] {
@@ -1711,15 +1714,15 @@ button,
   }
 
   .header-container {
-    padding: 20px 24px 15px;
+    padding: 20px 24px 15px 49px;
   }
 
   .header-contacts {
-    width: 100px;
-    margin-right: 50px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    margin-right: 79px;
+  }
+
+  .header-contacts__item + .header-contacts__item {
+    margin-left: 18px;
   }
 
   .header-contacts__icon {
@@ -1734,6 +1737,10 @@ button,
     display: none;
   }
 
+  .promo-section {
+    min-height: 640px;
+  }
+
   .promo {
     margin-left: 25px;
     padding-top: 170px;
@@ -1742,26 +1749,34 @@ button,
   .promo__title {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 2px;
+    margin-bottom: -2px;
   }
 
   .promo__description {
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 
   .promo__button {
     margin-left: 46px;
+    padding: 14px 24px 17px;
   }
 
   .advantages {
     padding: 80px 0;
   }
 
+  .advantages__list {
+    padding: 0 24px;
+    -webkit-column-gap: 26px;
+    -moz-column-gap: 26px;
+    column-gap: 26px;
+    row-gap: 30px;
+  }
+
   .advantages__item {
     padding-right: 30px;
     padding-bottom: 28px;
-    margin-left: 3px;
-    width: 320px;
+    width: 316px;
     min-height: 360px;
   }
 
@@ -1775,33 +1790,46 @@ button,
 
   .about {
     padding-bottom: 80px;
+    padding-left: 22px;
+    padding-right: 24px;
   }
 
   .about__wrapper {
-    gap: 25px;
+    gap: 27px;
+    margin-top: -2px;
+  }
+
+  .about__wrapper h1 {
+    margin-bottom: 9px;
   }
 
   .about__description {
     padding-bottom: 0;
-    margin-bottom: -10px;
+    margin-bottom: -7px;
   }
 
   .services {
     padding-top: 56px;
-    padding-bottom: 75px;
+    padding-bottom: 25px;
+  }
+
+  .services__title {
+    padding-left: 28px;
   }
 
   .services-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 30px;
+    padding-top: 38px;
+    padding-left: 26px;
   }
 
   .services-item {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     width: 670px;
-    height: 250px;
+    min-height: 250px;
   }
 
   .services-item-one {
@@ -1817,8 +1845,9 @@ button,
   }
 
   .services__item-title {
-    padding-top: 40px;
+    padding-top: 38px;
     padding-left: 45px;
+    max-width: 195px;
   }
 
   .questions {
@@ -1828,16 +1857,23 @@ button,
 
   .questions-wrapper {
     padding-top: 46px;
-    padding-bottom: 120px;
-    margin-left: 3px;
+    padding-bottom: 126px;
+    margin-left: 26px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .questions__image {
     display: none;
   }
 
+  .questions__title {
+    padding-bottom: 5px;
+  }
+
   .questions__description {
-    margin-bottom: 21px;
+    margin-bottom: 24px;
   }
 
   .questions-form__name {
@@ -1849,7 +1885,12 @@ button,
     width: 320px;
   }
 
+  .questions-form__textarea {
+    margin-bottom: 0;
+  }
+
   .questions-form__textarea textarea {
+    padding-top: 29px;
     margin-bottom: 26px;
   }
 
@@ -1857,6 +1898,10 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+
+  .questions-form__button button {
+    margin-right: 85px;
   }
 
   .questions-form__checkbox span {
@@ -1868,7 +1913,7 @@ button,
   }
 
   .social-networks {
-    margin-right: 46px;
+    margin-right: 11px;
   }
 
   .social-networks__item {
@@ -1876,8 +1921,46 @@ button,
     margin-left: 20px;
   }
 
+  .footer {
+    padding-top: 49px;
+  }
+
+  .footer__content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer__company {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 9px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
   .footer__logo {
     margin-bottom: 0;
+  }
+
+  .footer-section {
+    width: 50%;
+    padding-top: 21px;
+  }
+
+  .footer-section--menu {
+    padding-left: 10px;
+    max-width: 258px;
+  }
+
+  .footer-section--office {
+    margin-right: -15px;
   }
 
   .footer-section__menu {
@@ -2035,6 +2118,7 @@ button,
     margin-right: 0;
     margin-bottom: 20px;
     width: 100%;
+    padding-top: 16px;
   }
 
   .social-networks__item {

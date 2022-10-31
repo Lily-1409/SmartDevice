@@ -5,7 +5,7 @@
 
   @media (max-width: 1023px) {
     padding-top: 56px;
-    padding-bottom: 75px;
+    padding-bottom: 25px;
   }
 
   @media (max-width: 767px) {
@@ -24,6 +24,10 @@
   color: $color-default-white;
   margin: 0;
   padding: 0;
+
+  @media (max-width: 1023px) {
+    padding-left: 28px;
+  }
 }
 
 .services-list {
@@ -38,6 +42,8 @@
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
     gap: 30px;
+    padding-top:38px;
+    padding-left: 26px;
   }
 }
 
@@ -51,7 +57,7 @@
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
     width: 670px;
-    height: 250px;
+    min-height: 250px;
   }
 
   @media (max-width: 767px) {
@@ -90,6 +96,8 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  margin: 0;
+  padding: 0;
   line-height: 30px;
   padding-top: 30px;
   padding-left: 40px;
@@ -98,8 +106,9 @@
   position: absolute;
 
   @media (max-width: 1023px) {
-    padding-top: 40px;
+    padding-top: 38px;
     padding-left: 45px;
+    max-width: 195px;
   }
 
   @media (max-width: 767px) {

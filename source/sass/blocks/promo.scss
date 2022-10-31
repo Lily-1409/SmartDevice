@@ -7,6 +7,10 @@
   padding-top: 10px;
   z-index: -10;
   color: $color-alice-blue;
+
+  @media (max-width: 1023px) {
+    min-height: 640px;
+  }
 }
 
 .promo {
@@ -38,7 +42,7 @@
   @media (max-width: 1023px) {
     font-size: 64px;
     line-height: 75px;
-    margin-bottom: 2px;
+    margin-bottom: -2px;
   }
 
   @media (max-width: 767px) {
@@ -55,11 +59,11 @@
   line-height: 34px;
   margin: 0;
   padding: 0;
-  margin-bottom: 47px;
+  margin-bottom: 55px;
   max-width: 670px;
 
   @media (max-width: 1023px) {
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 
   @media (max-width: 767px) {
@@ -78,6 +82,7 @@
 
   @media (max-width: 1023px) {
     margin-left: 46px;
+    padding: 14px 24px 17px;
   }
 
   @media (max-width: 767px) {

@@ -7,6 +7,10 @@
     padding-left: 22px;
     padding-right: 24px;
   }
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+  }
 }
 
 .about__wrapper {
@@ -44,6 +48,12 @@
   @media (max-width: 1023px) {
     margin-bottom: 9px;
   }
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 10px;
+  }
 }
 
 .about__wrapper p{
@@ -55,6 +65,11 @@
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .about__description {
@@ -84,5 +99,11 @@
   width: 180px;
   display: block;
   text-align: center;
+  letter-spacing: 0.05em;
+
+  @media (max-width: 767px) {
+    padding: 9px;
+    width: 173px;
+  }
 }
 

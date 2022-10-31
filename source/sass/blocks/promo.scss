@@ -11,6 +11,10 @@
   @media (max-width: 1023px) {
     min-height: 640px;
   }
+
+  @media (max-width: 767px) {
+    min-height: 571px;
+  }
 }
 
 .promo {
@@ -24,6 +28,7 @@
 
   @media (max-width: 767px) {
     margin-left: 0;
+    padding-top: 151px;
   }
 }
 
@@ -48,6 +53,7 @@
   @media (max-width: 767px) {
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 8px;
   }
 }
 
@@ -69,6 +75,7 @@
   @media (max-width: 767px) {
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 44px;
   }
 }
 
@@ -89,6 +96,22 @@
     font-size: 14px;
     line-height: 16px;
     min-width: 270px;
-    padding: 10px 30px;
+    padding: 12px 30px;
+    margin-left: 0;
+  }
+}
+
+.promo__text-desktop {
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.promo__text-mobile {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
   }
 }

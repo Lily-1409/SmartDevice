@@ -943,6 +943,10 @@ button,
   background-color: #00b2ff;
 }
 
+.promo__text-mobile {
+  display: none;
+}
+
 .advantages {
   padding: 120px 0;
   background-color: #e5e5e5;
@@ -1070,6 +1074,7 @@ button,
   width: 180px;
   display: block;
   text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .services {
@@ -1088,6 +1093,10 @@ button,
   color: #ffffff;
   margin: 0;
   padding: 0;
+}
+
+.services__title-mobile {
+  display: none;
 }
 
 .services-list {
@@ -1127,9 +1136,9 @@ button,
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  line-height: 30px;
   margin: 0;
   padding: 0;
-  line-height: 30px;
   padding-top: 30px;
   padding-left: 40px;
   color: #ffffff;
@@ -1908,10 +1917,6 @@ button,
     max-width: 260px;
   }
 
-  .questions-form__checkbox span {
-    max-width: 235px;
-  }
-
   .social-networks {
     margin-right: 11px;
   }
@@ -2004,38 +2009,83 @@ button,
     display: none;
   }
 
+  .header-contacts {
+    margin-right: 316px;
+  }
+
+  .promo-section {
+    min-height: 571px;
+  }
+
   .promo {
     margin-left: 0;
+    padding-top: 151px;
   }
 
   .promo__title {
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 8px;
   }
 
   .promo__description {
     font-size: 14px;
     line-height: 22px;
+    margin-bottom: 44px;
   }
 
   .promo__button {
     font-size: 14px;
     line-height: 16px;
     min-width: 270px;
-    padding: 10px 30px;
+    padding: 12px 30px;
+    margin-left: 0;
+  }
+
+  .promo__text-desktop {
+    display: none;
+  }
+
+  .promo__text-mobile {
+    display: block;
   }
 
   .advantages {
-    padding: 50px 0;
+    padding: 50px 0 48px;
   }
 
   .advantages__list {
+    padding: 0;
+    margin-left: -2px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -webkit-column-gap: unset;
+    -moz-column-gap: unset;
+    column-gap: unset;
   }
 
   .advantages__item {
-    padding: 30px 30px 35px;
+    padding: 26px 26px 35px;
+    width: 272px;
+    min-height: 340px;
+  }
+
+  .advantages__image {
+    margin-bottom: 4px;
+  }
+
+  .advantages__title {
+    margin-bottom: 6px;
+    font-size: 20px;
+  }
+
+  .advantages__description {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about {
+    padding-left: 0;
   }
 
   .about__wrapper {
@@ -2047,9 +2097,45 @@ button,
     display: none;
   }
 
+  .about__wrapper h1 {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 10px;
+  }
+
+  .about__wrapper p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about__wrapper a {
+    padding: 9px;
+    width: 173px;
+  }
+
   .services {
-    padding-top: 50px;
-    padding-bottom: 86px;
+    padding-top: 47px;
+    padding-bottom: 37px;
+  }
+
+  .services__title {
+    font-size: 28px;
+    line-height: 39px;
+    padding-left: 7px;
+    max-width: 264px;
+  }
+
+  .services__title-desktop {
+    display: none;
+  }
+
+  .services__title-mobile {
+    display: block;
+  }
+
+  .services-list {
+    padding-top: 28px;
+    padding-left: 7px;
   }
 
   .services-item {
@@ -2060,8 +2146,9 @@ button,
   }
 
   .services__item-title {
-    padding-top: 30px;
+    padding-top: 28px;
     padding-left: 30px;
+    font-size: 18px;
   }
 
   .services__item-link::before {
@@ -2071,18 +2158,20 @@ button,
 
   .questions-wrapper {
     padding-bottom: 90px;
+    margin-left: 7px;
   }
 
   .questions__title {
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
+    min-width: 265px;
   }
 
   .questions__description {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   .questions-form__wrapper {
@@ -2095,7 +2184,7 @@ button,
 
   .questions-form__name {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   .questions-form__phone {
@@ -2105,6 +2194,12 @@ button,
   .questions-form__name input,
   .questions-form__phone input {
     width: 100%;
+  }
+
+  .questions-form__textarea textarea {
+    padding-top: 23px;
+    margin-bottom: 24px;
+    min-height: 179px;
   }
 
   .questions-form__submit {
@@ -2121,9 +2216,21 @@ button,
     padding-top: 16px;
   }
 
+  .questions-form__checkbox span {
+    max-width: 235px;
+    padding-left: 0px;
+  }
+
   .social-networks__item {
     margin-right: 0;
     margin-left: 20px;
+  }
+
+  .footer__company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .footer__logo-description {

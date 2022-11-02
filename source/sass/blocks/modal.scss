@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  top: 0;
+  top: 146px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -59,10 +59,10 @@
   &__content {
     position: relative;
 
-    width: 600px;
+    width: 500px;
     padding: 40px;
 
-    background-color: $color-default-white;
+    background-color: #00B3FF;
 
     @include vp-767 {
       width: 100%;
@@ -116,4 +116,154 @@
 
     pointer-events: auto;
   }
+}.modal__title {
+  font-family: $ff-heading-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: $color-default-white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
 }
+
+.modal__description {
+  font-family: $ff-content-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+// стилизация формы
+.modal-form__name label,
+.modal-form__phone label,
+.modal-form__textarea label {
+  display: none;
+}
+
+.modal-form__name input,
+.modal-form__phone input {
+  margin-bottom: 20px;
+}
+
+.modal-form__name input,
+.modal-form__phone input,
+.modal-form__textarea textarea {
+  border: none;
+  outline: none;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  padding: 15px;
+  width: 100%;
+
+  font-family: $ff-content-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $color-default-white;
+}
+
+.modal-form__name input::-webkit-input-placeholder,
+.modal-form__phone input::-webkit-input-placeholder,
+.modal-form__textarea textarea::-webkit-input-placeholder {
+  color: $color-default-white;
+}
+
+.modal-form__textarea textarea {
+  padding-top: 25px;
+  margin-bottom: 25px;
+  min-height: 155px;
+}
+
+.modal-form__submit {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__button button {
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0;
+
+  font-family: $ff-heading-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  background-color: #041427;
+  color: $color-default-white;
+  min-width: 100%;
+  margin-bottom: 20px;
+}
+
+.modal-form__checkbox input[type="checkbox"] {
+  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-form__checkbox label {
+  font-family: $ff-content-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+  cursor: pointer;
+  position: relative;
+}
+
+.modal-form__checkbox label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid $color-default-white;
+}
+.modal-form__checkbox span {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+}
+.modal-form__checkbox span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  transform: translateY(80%);
+  display: none;
+  width: 8px;
+  height: 6px;
+  background-image: url("/img/svg/icon-checked.svg");
+  background-repeat: no-repeat;
+}
+
+.modal-form__checkbox label input[type=checkbox]:checked + span::after {
+  display: block;
+}
+

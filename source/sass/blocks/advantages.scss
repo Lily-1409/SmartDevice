@@ -27,7 +27,7 @@
 
   @media (max-width: 767px) {
     padding: 0;
-    margin-left: -2px;
+    margin-left: 9px;
     grid-template-columns: 1fr;
     column-gap: unset;
   }
@@ -48,13 +48,13 @@
   }
 
   @media (max-width: 767px) {
-    padding: 26px 26px 35px;
+    padding: 26px 25px 35px;
     width: 272px;
     min-height: 340px;
   }
 }
 
-.advantages__item--active {
+.advantages__item:hover {
   background-color: $color-deep-sky-blue;
 }
 
@@ -74,7 +74,7 @@
   fill: $color-deep-sky-blue;
 }
 
-.advantages__item--active svg use {
+.advantages__item:hover svg use{
   fill: $color-alice-blue;
 }
 
@@ -99,7 +99,7 @@
   }
 }
 
-.advantages__item--active .advantages__title {
+.advantages__item:hover .advantages__title {
   color: $color-alice-blue;
 }
 
@@ -119,6 +119,6 @@
   }
 }
 
-.advantages__item--active .advantages__description {
+.advantages__item:hover .advantages__description {
   color: $color-alice-blue;
 }

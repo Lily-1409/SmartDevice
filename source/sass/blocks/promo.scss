@@ -5,7 +5,6 @@
   background-size: cover;
   min-height: 880px;
   padding-top: 10px;
-  z-index: -10;
   color: $color-alice-blue;
 
   @media (max-width: 1023px) {
@@ -13,7 +12,7 @@
   }
 
   @media (max-width: 767px) {
-    min-height: 571px;
+    min-height: 560px;
   }
 }
 
@@ -27,8 +26,8 @@
   }
 
   @media (max-width: 767px) {
-    margin-left: 0;
-    padding-top: 151px;
+    margin-left: 9px;
+    padding-top: 140px;
   }
 }
 
@@ -86,6 +85,7 @@
   color: $color-alice-blue;
   padding: 16px 24px;
   background-color: $color-deep-sky-blue;
+  cursor: pointer;
 
   @media (max-width: 1023px) {
     margin-left: 46px;

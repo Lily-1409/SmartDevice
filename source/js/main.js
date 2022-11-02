@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-// import {initModals} from './modules/s/init-modals';
+// import './modules/mask-number';
+import './modules/phone-input';
 
 // ---------------------------------
 
@@ -8,6 +9,29 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
+
+  const mainScreenButton = document.querySelector('.promo__button');
+
+  mainScreenButton.addEventListener('click', () => {
+    document.querySelector('.questions').scrollIntoView({behavior: 'smooth', block: 'start'});
+  });
+
+  const about = document.querySelector('.about');
+  const closeDescription = about.querySelector('.about__hidden-description');
+  const buttonOpen = about.querySelector('.about__open-button');
+  const buttonClose = about.querySelector('.about__close-button');
+
+  buttonOpen.addEventListener('click', () => {
+    closeDescription.style.display = 'block';
+    buttonOpen.style.display = 'none';
+    buttonClose.style.display = 'block';
+  });
+
+  buttonClose.addEventListener('click', () => {
+    closeDescription.style.display = 'none';
+    buttonOpen.style.display = 'block';
+    buttonClose.style.display = 'none';
+  });
 
   iosVhFix();
 
@@ -20,7 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
   });
 });
-
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

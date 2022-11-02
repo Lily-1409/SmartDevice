@@ -9,7 +9,7 @@
   }
 
   @media (max-width: 767px) {
-    padding-left: 0;
+    padding-left: 9px;
   }
 }
 
@@ -79,6 +79,11 @@
     padding-bottom: 0;
     margin-bottom: -7px;
   }
+}
+
+.about__hidden-description,
+.about__close-button {
+  display: none;
 }
 
 .about__wrapper a {

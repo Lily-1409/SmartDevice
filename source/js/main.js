@@ -33,6 +33,42 @@ window.addEventListener('DOMContentLoaded', () => {
     buttonClose.style.display = 'none';
   });
 
+  const accordionButton = document.querySelectorAll('.footer-section__button');
+  const menu = document.querySelectorAll('.footer-section__accordion');
+
+  for (let i = 0; i < accordionButton.length; i++) {
+    let currentButton = accordionButton[i];
+    currentButton.addEventListener('click', () => {
+
+      let panelMenu = currentButton.nextElementSibling;
+
+      if (panelMenu.style.display === 'block') {
+        menu.forEach(function (menuItem) {
+          menuItem.style.display = 'none';
+        });
+      } else {
+        menu.forEach(function (menuItem) {
+          menuItem.style.display = 'none';
+          panelMenu.style.display = 'block';
+        });
+      }
+    });
+  }
+  // const accordionSecondButton = document.querySelectorAll('.footer-section__button');
+  // const firstMenu = document.querySelector('.footer-section__menu');
+  // const secondMenu = document.querySelector('.footer-section__office');
+
+  // const formQuestions = document.querySelector('.questions');
+  // const formFields = formQuestions.querySelectorAll('input');
+  // const formButton = formQuestions.querySelector('.questions-form__button');
+
+  // for (let i = 0; i <= formFields.length - 1; i++) {
+  //   let currentField = formFields[i];
+  //   if (currentField.hasAttribute('required')) {
+  //     formButton.setAttribute('disabled', 'disabled');
+  //   }
+  // }
+
   iosVhFix();
 
   // Modules

@@ -238,7 +238,15 @@
           </div>
           <div class="footer-section footer-section--menu">
             <h2 class="footer-section__title">Разделы сайта</h2>
-            <div class="footer-section__menu">
+            <button class="footer-section__button">
+              <svg class="footer-section__icon-plus"  height="15" width="15">
+                <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+              </svg>
+              <svg class="footer-section__icon-minus"  height="15" width="15">
+                <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+              </svg>
+            </button>
+            <div class="footer-section__menu footer-section__accordion">
               <ul class="footer-section__list">
                 <li class="footer-section__item">
                   <a class="footer-section__link" href="#">О компании</a>
@@ -268,7 +276,15 @@
           </div>
           <div class="footer-section footer-section--office">
             <h2 class="footer-section__title">Наш офис</h2>
-            <ul class="footer-section__list">
+            <button class="footer-section__button">
+              <svg class="footer-section__icon-plus"  height="15" width="15">
+                <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
+              </svg>
+              <svg class="footer-section__icon-minus"  height="15" width="15">
+                <use xlink:href="img/sprite/sprite.svg#icon-minus"></use>
+              </svg>
+            </button>
+            <ul class="footer-section__list footer-section__office footer-section__accordion">
               <li class="footer-section__item">
                 <a class="footer-section__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
               </li>
@@ -298,11 +314,11 @@
             <form action="" method="post">
               <div class="modal-form__name">
                 <label for="input-1">Имя</label>
-                <input type="text" id="input-1" placeholder="Имя">
+                <input type="text" id="input-1" placeholder="Имя" required>
               </div>
               <div class="modal-form__phone">
                 <label for="input-2">Телефон</label>
-                <input type="number" id="input-2" placeholder="Телефон">
+                <input type="tel" id="input-2" placeholder="Телефон" data-tel-input required maxlength="18">
               </div>
               <div class="modal-form__textarea">
                 <label for="questions">Ваш вопрос</label>
@@ -313,7 +329,7 @@
               </div>
               <div class="modal-form__checkbox">
                 <label>
-                  <input type="checkbox">
+                  <input type="checkbox" required>
                   <span>Я согласен на обработку персональных данных</span>
                 </label>
               </div>

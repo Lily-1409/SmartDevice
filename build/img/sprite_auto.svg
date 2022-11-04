@@ -58,4 +58,10 @@
   <symbol viewBox="0 0 20 20" id="icon-close">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M.18 1.03a.6.6 0 0 1 .85-.85L10 9.15 18.97.18a.6.6 0 0 1 .85.85L10.85 10l8.97 8.97a.6.6 0 1 1-.85.85L10 10.85l-8.97 8.97a.6.6 0 1 1-.85-.85L9.15 10 .18 1.03Z" fill="#fff"/>
   </symbol>
+  <symbol viewBox="0 0 15 15" id="icon-plus">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97 7.03V0h-.94v7.03H0v.94h7.03V15h.94V7.97H15v-.94H7.97Z" fill="#F8FDFF"/>
+  </symbol>
+  <symbol viewBox="0 0 15 15" id="icon-minus">
+    <path d="M0 7h15v1H0V7Z" fill="#F8FDFF"/>
+  </symbol>
 </symbol></svg>

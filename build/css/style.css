@@ -1612,6 +1612,15 @@ button,
   letter-spacing: 0.06em;
 }
 
+.footer-section__button,
+.footer-section__button {
+  display: none;
+}
+
+.footer-section__icon-minus {
+  display: none;
+}
+
 .footer-section--office .footer-section__title {
   margin-bottom: 13px;
 }
@@ -2237,9 +2246,14 @@ button,
     width: 100%;
     margin-bottom: 6px;
     padding: 0 14px 0 24px;
+    position: relative;
   }
 
   .footer-section__menu {
+    display: none;
+  }
+
+  .footer-section__office {
     display: none;
   }
 
@@ -2247,8 +2261,28 @@ button,
     max-width: 320px;
   }
 
+  .footer-section__menu--active,
+  .footer-section__office--active {
+    display: block;
+  }
+
   .footer-section__title {
     margin-bottom: 21px;
+  }
+
+  .footer-section__button,
+  .footer-section__button {
+    display: block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 80%;
   }
 
   .footer-section__link {

@@ -955,7 +955,7 @@ button,
 }
 
 .header-container {
-  padding: 30px 50px 35px 55px;
+  padding: 30px 50px 35px 53px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1019,10 +1019,10 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 25px 0 0;
+  padding: 0;
   margin: 0;
   list-style-type: none;
-  width: 500px;
+  width: 512px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1128,6 +1128,7 @@ button,
 .advantages {
   padding: 120px 0;
   background-color: #e5e5e5;
+  width: 100%;
 }
 
 .advantages__list {
@@ -1358,8 +1359,8 @@ button,
 }
 
 .questions {
-  background-image: -o-linear-gradient(311deg, #2b648f 0%, #2b648f 30.5%, #2b648f 30.5%, #00b3ff 30.5%, #00b3ff 100%);
-  background-image: linear-gradient(139deg, #2b648f 0%, #2b648f 30.5%, #2b648f 30.5%, #00b3ff 30.5%, #00b3ff 100%);
+  background-image: -o-linear-gradient(311deg, #2b648f 0%, #2b648f 33.5%, #2b648f 33.5%, #00b3ff 33.5%, #00b3ff 100%);
+  background-image: linear-gradient(139deg, #2b648f 0%, #2b648f 33.5%, #2b648f 33.5%, #00b3ff 33.5%, #00b3ff 100%);
 }
 
 .questions-wrapper {
@@ -1376,7 +1377,7 @@ button,
 
 .questions__image {
   position: absolute;
-  top: 50%;
+  top: 52%;
   -webkit-transform: translateY(-62%);
   -ms-transform: translateY(-62%);
   transform: translateY(-62%);
@@ -1401,6 +1402,7 @@ button,
   padding: 0;
   padding-bottom: 10px;
   min-width: 580px;
+  margin-left: -5px;
 }
 
 .questions__description {
@@ -1769,9 +1771,9 @@ button,
 
   .header-contacts {
     margin-right: 23px;
-    -webkit-box-pack: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     width: unset;
   }
 
@@ -1925,8 +1927,13 @@ button,
     display: none;
   }
 
+  .questions__form-wrapper {
+    max-width: unset;
+  }
+
   .questions__title {
     padding-bottom: 5px;
+    margin-left: 0;
   }
 
   .questions__description {
@@ -2078,7 +2085,11 @@ button,
 
   .header-contacts {
     margin-right: 0;
-    padding-right: 11px;
+  }
+
+  .header-contacts__item + .header-contacts__item {
+    margin-right: 0;
+    margin-left: 15px;
   }
 
   .promo-section {
@@ -2155,7 +2166,7 @@ button,
 
   .about {
     padding-left: 9px;
-    padding-right: 16px;
+    padding-right: 0;
   }
 
   .about__wrapper {
@@ -2181,7 +2192,7 @@ button,
 
   .about__wrapper a {
     padding: 9px;
-    width: 173px;
+    width: 160px;
   }
 
   .services {
@@ -2254,7 +2265,7 @@ button,
     font-size: 30px;
     line-height: 42px;
     margin-bottom: 3px;
-    min-width: 265px;
+    min-width: 271px;
   }
 
   .questions__description {
@@ -2300,7 +2311,7 @@ button,
 
   .questions-form__button button {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     width: 100%;
     padding-top: 16px;
   }
@@ -2321,7 +2332,7 @@ button,
   }
 
   .social-networks {
-    margin-right: 40px;
+    margin-right: 53px;
   }
 
   .social-networks__item {
@@ -2342,7 +2353,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0 14px 18px 24px;
+    padding: 0 14px 18px 50px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
@@ -2358,7 +2369,7 @@ button,
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     width: 100%;
     margin-bottom: 12px;
-    padding: 16px 14px 0 24px;
+    padding: 0 14px 0 24px;
     position: relative;
   }
 

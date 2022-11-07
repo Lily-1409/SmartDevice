@@ -2042,6 +2042,10 @@ button,
   .services-item-two {
     background-image: url("../img/images-cards/card-background-2-tablet@2x.jpg");
   }
+
+  .services-item-three {
+    background-image: url("../img/images-cards/card-background-3-tablet@2x.jpg");
+  }
 }
 
 @media (max-width: 767px) {
@@ -2406,6 +2410,7 @@ button,
   .footer-section__title {
     margin-top: 20px;
     margin-bottom: 21px;
+    position: relative;
   }
 
   .footer-section__button {
@@ -2420,6 +2425,10 @@ button,
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     left: 85%;
+  }
+
+  .footer-section__button--active {
+    top: 8%;
   }
 
   .footer-section__link {
@@ -2447,6 +2456,10 @@ button,
   .services-item-two {
     background-image: url("../img/images-cards/card-background-2-mobile@2x.jpg");
   }
+
+  .services-item-three {
+    background-image: url("../img/images-cards/card-background-3-mobile@2x.jpg");
+  }
 }
 
 @media only screen and (min-resolution: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-resolution: 144dpi) {
@@ -2456,5 +2469,9 @@ button,
 
   .services-item-two {
     background-image: url("../img/images-cards/card-background-2-desktop@2x.jpg");
+  }
+
+  .services-item-three {
+    background-image: url("../img/images-cards/card-background-3-desktop@2x.jpg");
   }
 }

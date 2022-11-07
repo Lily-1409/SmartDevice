@@ -160,27 +160,27 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  // @media only screen and (min-resolution: 1.5),
-  // only screen and (min-resolution: 144dpi) {
-  //   background-image: url("../img/images-cards/card-background-3-desktop@2x.jpg");
-  // }
+  @media only screen and (min-resolution: 1.5),
+  only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/images-cards/card-background-3-desktop@2x.jpg");
+  }
 
   @media (max-width: 1023px) {
     background-image: url("../img/images-cards/card-background-3-tablet.jpg");
 
-    // @media only screen and (min-resolution: 1.5),
-    //         only screen and (min-resolution: 144dpi) {
-    //   background-image: url("../img/images-cards/card-background-3-tablet@2x.jpg");
-    // }
+    @media only screen and (min-resolution: 1.5),
+            only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/images-cards/card-background-3-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: 767px) {
     background-image: url("../img/images-cards/card-background-3-mobile.jpg");
 
-    // @media only screen and (min-resolution: 1.5),
-    //         only screen and (min-resolution: 144dpi) {
-    //   background-image: url("../img/images-cards/card-background-3-mobile@2x.jpg");
-    // }
+    @media only screen and (min-resolution: 1.5),
+            only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/images-cards/card-background-3-mobile@2x.jpg");
+    }
   }
 }
 

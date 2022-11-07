@@ -45,7 +45,7 @@
               </a>
             </li>
           </ul>
-          <button class="header-button btn" data-open-modal="feedback">Заказать звонок</button>
+          <button class="header-button btn" data-open-modal="feedback" aria-label="Кнопка: Заказать звонок">Заказать звонок</button>
         </div>
       </header>
       <main>
@@ -57,7 +57,7 @@
             <div class="promo">
               <h1 class="promo__title">Печатные платы</h1>
               <p class="promo__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <button class="promo__button btn">
+              <button class="promo__button btn" aria-label="Кнопка: Получить бесплатную консультацию">
                 <span class="promo__text-desktop">Получить бесплатную консультацию</span>
                 <span class="promo__text-mobile">Бесплатная консультация</span>
               </button>
@@ -104,21 +104,24 @@
         <article class="about">
           <div class="container">
             <div class="about__wrapper">
-              <img src="./img/year.png" srcset="./img/year@2x.png 2x" width="150" height="320" alt="2022 год">
+              <picture>
+                <source type="image/webp" srcset="./img/year.webp 1x, ./img/year@2x.webp 2x">
+                <img src="./img/year.png" srcset="./img/year@2x.png 2x" width="150" height="320" alt="2022 год">
+              </picture>
               <div>
                 <h1>О компании</h1>
                 <div class="about__description">
                   <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-                  <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+                  <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="about__hidden-mobile about__hidden-mobile--hidden">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
                 </div>
-                <div class="about__hidden-description">
+                <div class="about__hidden-description about__hidden-description--hidden">
                   <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
                   <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
                 </div>
-                <div class="about__open-button">
+                <div class="about__open-button" aria-label="Кнопка: Развернуть текст">
                   <a href="#">Подробнее</a>
                 </div>
-                <div class="about__close-button">
+                <div class="about__close-button" aria-label="Кнопка: Свернуть текст">
                   <a href="#">Свернуть</a>
                 </div>
               </div>
@@ -138,7 +141,7 @@
                   <svg height="10" width="10">
                     <use xlink:href="img/sprite/sprite.svg#arrow-service"></use>
                   </svg>
-               </a>
+                </a>
               </li>
               <li class="services-item services-item-two">
                 <a class="services__item-link" href="#" target="_blank">
@@ -162,12 +165,17 @@
         <section class="questions">
           <div class="container">
             <div class="questions-wrapper">
-              <img class="questions__image" src="./img/paper_airplane.png" srcset="./img/paper_airplane@2x.png 2x" width="510" height="285" alt="Письмо">
+              <div class="questions__image" >
+                <picture>
+                  <source type="image/webp" srcset="./img/paper_airplane.webp 1x, ./img/paper_airplane@2x.webp 2x">
+                  <img src="./img/paper_airplane.png" srcset="./img/paper_airplane@2x.png 2x" width="510" height="285" alt="Письмо">>
+                </picture>
+              </div>
               <div class="questions__form-wrapper">
                 <h1 class="questions__title">Остались вопросы? Задайте их нам!</h1>
                 <p class="questions__description">Мы проконсультируем Вас бесплатно</p>
                 <div class="questions-form">
-                  <form action="" method="post">
+                  <form action="https://echo.htmlacademy.ru/" method="post">
                     <div class="questions-form__wrapper">
                       <div class="questions-form__name">
                         <label for="input-1">Имя</label>
@@ -238,7 +246,7 @@
           </div>
           <div class="footer-section footer-section--menu">
             <h2 class="footer-section__title">Разделы сайта</h2>
-            <button class="footer-section__button">
+            <button class="footer-section__button" aria-label="Кнопка: Открыть и скрыть список">
               <svg class="footer-section__icon-plus"  height="15" width="15">
                 <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
               </svg>
@@ -276,7 +284,7 @@
           </div>
           <div class="footer-section footer-section--office">
             <h2 class="footer-section__title">Наш офис</h2>
-            <button class="footer-section__button">
+            <button class="footer-section__button" aria-label="Кнопка: Открыть и скрыть список">
               <svg class="footer-section__icon-plus"  height="15" width="15">
                 <use xlink:href="img/sprite/sprite.svg#icon-plus"></use>
               </svg>
@@ -310,19 +318,19 @@
         <div class="modal__content">
           <h1 class="modal__title">Закажите звонок</h1>
           <p class="modal__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <div class="modal-from">
-            <form action="" method="post">
+          <div class="modal-form">
+            <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="modal-form__name">
-                <label for="input-1">Имя</label>
-                <input type="text" id="input-1" placeholder="Имя" required>
+                <label for="input-name">Имя</label>
+                <input type="text" id="input-name" placeholder="Имя" required>
               </div>
               <div class="modal-form__phone">
-                <label for="input-2">Телефон</label>
-                <input type="tel" id="input-2" placeholder="Телефон" data-tel-input required maxlength="18">
+                <label for="input-phone">Телефон</label>
+                <input type="tel" id="input-phone" placeholder="Телефон" data-tel-input required maxlength="18">
               </div>
               <div class="modal-form__textarea">
-                <label for="questions">Ваш вопрос</label>
-                <textarea id="questions" placeholder="Ваш вопрос"></textarea>
+                <label for="questions-form">Ваш вопрос</label>
+                <textarea id="questions-form" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="modal-form__button">
                 <button>Отправить</button>

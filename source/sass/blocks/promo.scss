@@ -3,16 +3,19 @@
   background-color: $color-default-black;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 880px;
   padding-top: 10px;
   color: $color-alice-blue;
 
   @media (max-width: 1023px) {
     min-height: 640px;
+    background-position: -125px;
   }
 
   @media (max-width: 767px) {
     min-height: 560px;
+    background-position: -230px;
   }
 }
 
@@ -64,7 +67,7 @@
   line-height: 34px;
   margin: 0;
   padding: 0;
-  margin-bottom: 55px;
+  margin-bottom: 47px;
   max-width: 670px;
 
   @media (max-width: 1023px) {
@@ -102,7 +105,6 @@
 }
 
 .promo__text-desktop {
-
   @media (max-width: 767px) {
     display: none;
   }

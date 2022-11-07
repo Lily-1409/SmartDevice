@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding-top: 34px;
+    padding-top: 36px;
   }
 }
 
@@ -30,7 +30,6 @@
 }
 
 .footer__company {
-
   @media (max-width: 1023px) {
     display: flex;
     align-items: center;
@@ -42,8 +41,7 @@
 
   @media (max-width: 767px) {
     flex-direction: column;
-    padding-bottom: 19px;
-    padding: 0 14px 20px 24px;
+    padding: 0 14px 18px 24px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
@@ -74,19 +72,29 @@
 
 // разделы футера
 .footer-section {
-
   @media (max-width: 1023px) {
     width: 50%;
     padding-top: 12px;
   }
 
   @media (max-width: 767px) {
-    padding-top: 16px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     width: 100%;
-    margin-bottom: 6px;
-    padding: 0 14px 0 24px;
+    margin-bottom: 12px;
+    padding: 16px 14px 0 24px;
     position: relative;
+  }
+}
+
+.footer-section--menu {
+  margin-left: 140px;
+
+  @media (max-width: 1023px) {
+    margin-left: 10px;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 0;
   }
 }
 
@@ -94,23 +102,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 5px;
-  padding-left: 140px;
 
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
     padding-left: 0;
-    max-width: 258px;
+    max-width: 248px;
   }
 
   @media (max-width: 767px) {
     display: none;
+    max-width: unset;
   }
 }
 
 .footer-section__office {
   @media (max-width: 767px) {
     display: none;
-  }}
+  }
+}
 
 .footer-section--office {
   max-width: 346px;
@@ -120,13 +129,26 @@
   }
 
   @media (max-width: 767px) {
+    max-width: unset;
+  }
+}
+
+.footer-section__menu ul {
+  user-select: none;
+
+  @media (max-width: 767px) {
+    max-width: 215px;
+  }
+}
+
+.footer-section--office ul {
+  @media (max-width: 767px) {
     max-width: 320px;
   }
 }
 
 .footer-section__menu--active,
 .footer-section__office--active {
-
   @media (max-width: 767px) {
     display: block;
   }
@@ -136,7 +158,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 5px;
   font-family: $ff-heading-font;
   font-style: normal;
   font-weight: 400;
@@ -145,12 +167,16 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
 
+  @media (max-width: 1023px) {
+    margin-top: 16px;
+  }
+
   @media (max-width: 767px) {
+    margin-top: 20px;
     margin-bottom: 21px;
   }
 }
 
-.footer-section__button,
 .footer-section__button {
   display: none;
 
@@ -163,12 +189,20 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 80%;
+    left: 85%;
   }
 }
 
 .footer-section__icon-minus {
   display: none;
+}
+
+.footer-section__button--active .footer-section__icon-plus {
+  display: none;
+}
+
+.footer-section__button--active .footer-section__icon-minus {
+  display: block;
 }
 
 .footer-section--office .footer-section__title {

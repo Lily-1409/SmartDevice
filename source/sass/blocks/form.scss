@@ -1,9 +1,9 @@
-.questions{
-  background-image: linear-gradient(139deg,#2b648f 0%,#2b648f 31.5%,#2b648f 31.5%,#00B3FF 31.5%,#00B3FF 100%);
+.questions {
+  background-image: linear-gradient(139deg, #2b648f 0%, #2b648f 30.5%, #2b648f 30.5%, #00b3ff 30.5%, #00b3ff 100%);
 
   @media (max-width: 1023px) {
     background-image: unset;
-    background-color: #00B3FF;
+    background-color: #00b3ff;
   }
 }
 
@@ -41,6 +41,8 @@
 .questions__form-wrapper {
   max-width: 590px;
   padding-right: 10px;
+  z-index: 20;
+  position: relative;
 }
 
 .questions__title {
@@ -115,8 +117,7 @@
   }
 }
 
-.questions-form__phone  {
-
+.questions-form__phone {
   @media (max-width: 767px) {
     margin-bottom: 20px;
   }
@@ -156,7 +157,16 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: $color-default-white;
+  color: $color-alice-blue;
+}
+
+.questions-form__name input:hover,
+.questions-form__phone input:hover,
+.questions-form__textarea textarea:hover,
+.questions-form__name input:focus,
+.questions-form__phone input:focus,
+.questions-form__textarea textarea:focus {
+  background-color: rgba(4, 20, 39, 0.3);
 }
 
 .questions-form__name input::-webkit-input-placeholder,
@@ -210,7 +220,6 @@
   border: none;
   cursor: pointer;
   border-radius: 3px;
-  padding: 0;
 
   font-family: $ff-heading-font;
   font-style: normal;
@@ -274,7 +283,13 @@
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid $color-default-white;
+
+  @media (max-width: 767px) {
+    top: 25%;
+    left: -12%;
+  }
 }
+
 .questions-form__checkbox span {
   position: relative;
   display: block;
@@ -286,11 +301,12 @@
 
   @media (max-width: 767px) {
     max-width: 235px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
+
 .questions-form__checkbox span::after {
-  content: "";
+  content: " ";
   position: absolute;
   top: 7px;
   left: 3px;
@@ -300,8 +316,13 @@
   height: 6px;
   background-image: url("/img/svg/icon-checked.svg");
   background-repeat: no-repeat;
+
+  @media (max-width: 767px) {
+    top: 7px;
+    left: -25px;
+  }
 }
 
-.questions-form__checkbox label input[type=checkbox]:checked + span::after {
+.questions-form__checkbox label input[type="checkbox"]:checked + span::after {
   display: block;
 }

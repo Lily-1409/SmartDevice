@@ -1,6 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-// import './modules/mask-number';
 import './modules/phone-input';
 
 // ---------------------------------
@@ -18,19 +17,25 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const about = document.querySelector('.about');
   const closeDescription = about.querySelector('.about__hidden-description');
-  const buttonOpen = about.querySelector('.about__open-button');
-  const buttonClose = about.querySelector('.about__close-button');
+  const closeDescriptionMobile = about.querySelector('.about__hidden-mobile');
+  const buttonOpen = about.querySelector('.about__open-button a');
 
-  buttonOpen.addEventListener('click', () => {
-    closeDescription.style.display = 'block';
-    buttonOpen.style.display = 'none';
-    buttonClose.style.display = 'block';
-  });
+  buttonOpen.addEventListener('click', (e) => {
+    e.preventDefault();
 
-  buttonClose.addEventListener('click', () => {
-    closeDescription.style.display = 'none';
-    buttonOpen.style.display = 'block';
-    buttonClose.style.display = 'none';
+    const state = closeDescription.classList.contains('about__hidden-description--hidden');
+
+    if (state) {
+      closeDescription.classList.remove('about__hidden-description--hidden');
+      closeDescriptionMobile.classList.remove('about__hidden-mobile--hidden');
+      buttonOpen.textContent = 'Скрыть';
+
+      return;
+    }
+
+    closeDescription.classList.add('about__hidden-description--hidden');
+    closeDescriptionMobile.classList.add('about__hidden-mobile--hidden');
+    buttonOpen.textContent = 'Подробнее';
   });
 
   const accordionButton = document.querySelectorAll('.footer-section__button');
@@ -39,6 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
   for (let i = 0; i < accordionButton.length; i++) {
     let currentButton = accordionButton[i];
     currentButton.addEventListener('click', () => {
+      currentButton.classList.toggle('footer-section__button--active');
 
       let panelMenu = currentButton.nextElementSibling;
 
@@ -54,6 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
   // const accordionSecondButton = document.querySelectorAll('.footer-section__button');
   // const firstMenu = document.querySelector('.footer-section__menu');
   // const secondMenu = document.querySelector('.footer-section__office');

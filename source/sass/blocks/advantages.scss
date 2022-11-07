@@ -3,7 +3,7 @@
   background-color: $color-whisper;
 
   @media (max-width: 1023px) {
-    padding: 80px 0;
+    padding: 80px 0 76px;
   }
 
   @media (max-width: 767px) {
@@ -74,7 +74,7 @@
   fill: $color-deep-sky-blue;
 }
 
-.advantages__item:hover svg use{
+.advantages__item:hover svg use {
   fill: $color-alice-blue;
 }
 

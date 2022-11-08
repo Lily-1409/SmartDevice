@@ -397,7 +397,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: local("Roboto Condensed"), url("../../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Regular.woff") format("woff");
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: local("Roboto Condensed"), url("../../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../../fonts/RobotoCondensed-Bold.woff") format("woff");
+  src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: local("PT Mono"), url("../../fonts/PTMono-Regular.woff2") format("woff2"), url("../../fonts/PTMono-Regular.woff") format("woff");
+  src: local("PT Mono"), url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -421,7 +421,7 @@ template {
   font-weight: 700;
   font-family: "PT Mono";
   font-display: swap;
-  src: local("PT Mono"), url("../../fonts/PTMono-Bold.woff2") format("woff2"), url("../../fonts/PTMono-Bold.woff") format("woff");
+  src: local("PT Mono"), url("../fonts/PTMono-Bold.woff2") format("woff2"), url("../fonts/PTMono-Bold.woff") format("woff");
 }
 
 *,
@@ -1296,7 +1296,7 @@ button,
 
 .services-item {
   background-color: #041827;
-  background-image: url("../../img/promo-background-desktop.jpg");
+  background-image: url("/img/promo-background-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 650px;
@@ -1304,21 +1304,21 @@ button,
 }
 
 .services-item-one {
-  background-image: url("../../img/images-cards/card-background-1-desktop.jpg");
+  background-image: url("../img/images-cards/card-background-1-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .services-item-two {
-  background-image: url("../../img/images-cards/card-background-2-desktop.jpg");
+  background-image: url("../img/images-cards/card-background-2-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .services-item-three {
-  background-image: url("../../img/images-cards/card-background-3-desktop.jpg");
+  background-image: url("../img/images-cards/card-background-3-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

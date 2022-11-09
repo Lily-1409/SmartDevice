@@ -14,7 +14,7 @@
   }
 }
 
-.services__title {
+.services h2 {
   font-family: $ff-heading-font;
   font-style: normal;
   font-weight: 400;
@@ -74,7 +74,7 @@
 
 .services-item {
   background-color: $color-black-pearl;
-  background-image: url("/img/promo-background-desktop.jpg");
+  background-image: url("../img/promo-background-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 650px;
@@ -184,7 +184,7 @@
   }
 }
 
-.services__item-title {
+.services-item h3 {
   font-family: $ff-heading-font;
   font-style: normal;
   font-weight: 400;

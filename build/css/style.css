@@ -673,7 +673,7 @@ button,
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 100000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1030,6 +1030,7 @@ button,
 
 .header-contacts__item {
   padding: 10px;
+  padding-top: 0;
 }
 
 .header-contacts__item + .header-contacts__item {
@@ -1086,7 +1087,7 @@ button,
   padding-top: 294px;
 }
 
-.promo__title {
+.promo h1 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1099,7 +1100,7 @@ button,
   margin-bottom: 32px;
 }
 
-.promo__description {
+.promo p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1166,7 +1167,7 @@ button,
   fill: #f2f5f7;
 }
 
-.advantages__title {
+.advantages__item h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1178,11 +1179,11 @@ button,
   margin-bottom: 12px;
 }
 
-.advantages__item:hover .advantages__title {
+.advantages__item:hover h3 {
   color: #f2f5f7;
 }
 
-.advantages__description {
+.advantages__item p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1193,7 +1194,7 @@ button,
   padding: 0;
 }
 
-.advantages__item:hover .advantages__description {
+.advantages__item:hover p {
   color: #f2f5f7;
 }
 
@@ -1210,7 +1211,7 @@ button,
   gap: 98px;
 }
 
-.about__wrapper h1 {
+.about__wrapper h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1268,7 +1269,7 @@ button,
   padding-bottom: 90px;
 }
 
-.services__title {
+.services h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1296,7 +1297,7 @@ button,
 
 .services-item {
   background-color: #041827;
-  background-image: url("/img/promo-background-desktop.jpg");
+  background-image: url("../img/promo-background-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 650px;
@@ -1324,7 +1325,7 @@ button,
   background-position: center;
 }
 
-.services__item-title {
+.services-item h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1391,7 +1392,7 @@ button,
   position: relative;
 }
 
-.questions__title {
+.questions__form-wrapper h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1405,7 +1406,7 @@ button,
   margin-left: -5px;
 }
 
-.questions__description {
+.questions__form-wrapper p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1649,7 +1650,7 @@ button,
   user-select: none;
 }
 
-.footer-section__title {
+.footer-section h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -1677,10 +1678,6 @@ button,
 
 .footer-section__button--active .footer-section__icon-minus {
   display: block;
-}
-
-.footer-section--office .footer-section__title {
-  margin-bottom: 13px;
 }
 
 .footer__social {
@@ -1803,13 +1800,13 @@ button,
     padding-top: 170px;
   }
 
-  .promo__title {
+  .promo h1 {
     font-size: 64px;
     line-height: 75px;
     margin-bottom: -2px;
   }
 
-  .promo__description {
+  .promo p {
     margin-bottom: 59px;
   }
 
@@ -1841,7 +1838,7 @@ button,
     margin-bottom: 8px;
   }
 
-  .advantages__title {
+  .advantages__item h3 {
     margin-bottom: 8px;
   }
 
@@ -1856,7 +1853,7 @@ button,
     margin-left: 1px;
   }
 
-  .about__wrapper h1 {
+  .about__wrapper h2 {
     margin-bottom: 10px;
   }
 
@@ -1870,7 +1867,7 @@ button,
     padding-bottom: 25px;
   }
 
-  .services__title {
+  .services h2 {
     padding-left: 28px;
     max-width: 710px;
   }
@@ -1903,7 +1900,7 @@ button,
     background-image: url("../img/images-cards/card-background-3-tablet.jpg");
   }
 
-  .services__item-title {
+  .services-item h3 {
     padding-top: 36px;
     padding-left: 45px;
     max-width: 195px;
@@ -1931,12 +1928,12 @@ button,
     max-width: unset;
   }
 
-  .questions__title {
+  .questions__form-wrapper h2 {
     padding-bottom: 5px;
     margin-left: 0;
   }
 
-  .questions__description {
+  .questions__form-wrapper p {
     margin-bottom: 24px;
   }
 
@@ -2029,7 +2026,7 @@ button,
     margin-right: -15px;
   }
 
-  .footer-section__title {
+  .footer-section h3 {
     margin-top: 16px;
   }
 }
@@ -2091,9 +2088,14 @@ button,
     margin-right: 0;
   }
 
+  .header-contacts__item {
+    padding: 0;
+  }
+
   .header-contacts__item + .header-contacts__item {
     margin-right: 0;
-    margin-left: 15px;
+    margin-left: 39px;
+    margin-right: 20px;
   }
 
   .promo-section {
@@ -2106,13 +2108,13 @@ button,
     padding-top: 140px;
   }
 
-  .promo__title {
+  .promo h1 {
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 8px;
   }
 
-  .promo__description {
+  .promo p {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 44px;
@@ -2158,12 +2160,12 @@ button,
     margin-bottom: 4px;
   }
 
-  .advantages__title {
+  .advantages__item h3 {
     margin-bottom: 6px;
     font-size: 20px;
   }
 
-  .advantages__description {
+  .advantages__item p {
     font-size: 14px;
     line-height: 19px;
   }
@@ -2183,7 +2185,7 @@ button,
     display: none;
   }
 
-  .about__wrapper h1 {
+  .about__wrapper h2 {
     font-size: 28px;
     line-height: 39px;
     margin-bottom: 10px;
@@ -2204,7 +2206,7 @@ button,
     padding-bottom: 37px;
   }
 
-  .services__title {
+  .services h2 {
     font-size: 28px;
     line-height: 39px;
     padding-left: 9px;
@@ -2243,7 +2245,7 @@ button,
     background-image: url("../img/images-cards/card-background-3-mobile.jpg");
   }
 
-  .services__item-title {
+  .services-item h3 {
     padding-top: 26px;
     padding-left: 30px;
     font-size: 18px;
@@ -2265,14 +2267,14 @@ button,
     margin-left: 7px;
   }
 
-  .questions__title {
+  .questions__form-wrapper h2 {
     font-size: 30px;
     line-height: 42px;
     margin-bottom: 3px;
     min-width: 271px;
   }
 
-  .questions__description {
+  .questions__form-wrapper p {
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 33px;
@@ -2372,7 +2374,6 @@ button,
   .footer-section {
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     width: 100%;
-    margin-bottom: 12px;
     padding: 0 14px 0 24px;
     position: relative;
   }
@@ -2407,7 +2408,7 @@ button,
     display: block;
   }
 
-  .footer-section__title {
+  .footer-section h3 {
     margin-top: 20px;
     margin-bottom: 21px;
     position: relative;

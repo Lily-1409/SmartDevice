@@ -97,6 +97,11 @@
 
 .header-contacts__item {
   padding: 10px;
+  padding-top: 0;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 }
 
 .header-contacts__item + .header-contacts__item {
@@ -108,7 +113,8 @@
 
   @media (max-width: 767px) {
     margin-right: 0;
-    margin-left: 15px;
+    margin-left: 39px;
+    margin-right: 20px;
   }
 }
 

@@ -80,7 +80,6 @@
   @media (max-width: 767px) {
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     width: 100%;
-    margin-bottom: 12px;
     padding: 0 14px 0 24px;
     position: relative;
   }
@@ -154,7 +153,7 @@
   }
 }
 
-.footer-section__title {
+.footer-section h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -211,10 +210,6 @@
 
 .footer-section__button--active .footer-section__icon-minus {
   display: block;
-}
-
-.footer-section--office .footer-section__title {
-  margin-bottom: 13px;
 }
 
 .footer__social {

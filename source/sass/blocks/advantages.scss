@@ -79,7 +79,7 @@
   fill: $color-alice-blue;
 }
 
-.advantages__title {
+.advantages__item h3 {
   font-family: $ff-heading-font;
   font-style: normal;
   font-weight: 400;
@@ -100,11 +100,11 @@
   }
 }
 
-.advantages__item:hover .advantages__title {
+.advantages__item:hover h3 {
   color: $color-alice-blue;
 }
 
-.advantages__description {
+.advantages__item p {
   font-family: $ff-content-font;
   font-style: normal;
   font-weight: 400;
@@ -120,6 +120,6 @@
   }
 }
 
-.advantages__item:hover .advantages__description {
+.advantages__item:hover p {
   color: $color-alice-blue;
 }

@@ -669,7 +669,7 @@ button,
 
 .modal {
   position: fixed;
-  top: 146px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -779,7 +779,7 @@ button,
   pointer-events: auto;
 }
 
-.modal__title {
+.modal__content h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -791,7 +791,7 @@ button,
   margin-bottom: 15px;
 }
 
-.modal__description {
+.modal__content p {
   font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

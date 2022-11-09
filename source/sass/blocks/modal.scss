@@ -118,7 +118,7 @@
   }
 }
 
-.modal__title {
+.modal__content h2 {
   font-family: $ff-heading-font;
   font-style: normal;
   font-weight: 400;
@@ -130,7 +130,7 @@
   margin-bottom: 15px;
 }
 
-.modal__description {
+.modal__content p {
   font-family: $ff-content-font;
   font-style: normal;
   font-weight: 400;

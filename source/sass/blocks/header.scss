@@ -3,10 +3,14 @@
   position: fixed;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   z-index: 9999;
+
+  @include vp-1023 {
+    position: absolute;
+  }
 }
 
 .header-container {
-  padding: 30px 50px 35px 53px;
+  padding: 30px 42px 35px 62px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,40 +41,21 @@
   }
 }
 
-.logo__image {
-  max-width: 55px;
-  max-height: 55px;
+.logo__full {
   flex: 0 0 auto;
-
-  @media (max-width: 767px) {
-    max-width: 35px;
-    max-height: 35px;
-  }
-}
-
-.logo__description {
-  padding-left: 15px;
 
   @media (max-width: 767px) {
     display: none;
   }
 }
 
-.logo__name {
-  font-family: $ff-heading-font;
-  font-weight: 700;
-  font-size: 25px;
-  color: $color-alice-blue;
-  white-space: nowrap;
-}
+.logo__shot {
+  flex: 0 0 auto;
+  display: none;
 
-.logo__slogan {
-  font-family: $ff-heading-font;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.8px;
-  color: rgba(255, 255, 255, 0.7);
+  @media (max-width: 767px) {
+    display: block;
+  }
 }
 
 // стилизация контактов
@@ -152,7 +137,8 @@
   line-height: 16px;
   min-width: 160px;
   color: $color-alice-blue;
-  padding: 10px 15px;
+  padding: 11px 15px;
+  margin-top: -7px;
   background-color: transparent;
   border: 1px solid $color-alice-blue;
   margin-right: 66px;

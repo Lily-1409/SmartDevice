@@ -1,6 +1,6 @@
 .advantages {
   padding: 120px 0;
-  background-color: $color-whisper;
+  background-color: #f9fdff;
   width: 100%;
 
   @media (max-width: 1023px) {
@@ -8,7 +8,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 50px 0 48px;
+    padding: 50px 0 21px;
   }
 }
 
@@ -49,9 +49,17 @@
   }
 
   @media (max-width: 767px) {
-    padding: 26px 25px 35px;
+    padding: 29px 25px 35px;
     width: 272px;
     min-height: 340px;
+  }
+}
+
+.advantages__item--shot {
+
+  @media (max-width: 767px) {
+    min-height: 325px;
+    padding-right: 35px;
   }
 }
 
@@ -67,7 +75,9 @@
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 4px;
+    margin-bottom: 7px;
+    height: 30px;
+    width: 30px;
   }
 }
 

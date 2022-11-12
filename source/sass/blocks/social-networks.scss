@@ -5,9 +5,10 @@
   display: flex;
   align-items: center;
   margin-left: 31px;
+  flex-wrap: wrap;
 
   @media (max-width: 1023px) {
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
   @media (max-width: 767px) {
@@ -17,16 +18,13 @@
 }
 
 .social-networks__item {
+  margin-right: 22px;
   @media (max-width: 1023px) {
     margin-right: 0;
     margin-left: 20px;
   }
-
   @media (max-width: 767px) {
-    margin: 0;
+    margin-right: 11px;
+    margin-left: 11px;
   }
-}
-
-.social-networks__item + .social-networks__item {
-  margin-left: 22px;
 }

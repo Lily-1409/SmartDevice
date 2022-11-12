@@ -89,10 +89,12 @@
   padding: 16px 24px;
   background-color: $color-deep-sky-blue;
   cursor: pointer;
+  margin-bottom: 280px;
 
   @media (max-width: 1023px) {
     margin-left: 46px;
     padding: 14px 24px 17px;
+    margin-bottom: 205px;
   }
 
   @media (max-width: 767px) {
@@ -101,6 +103,7 @@
     min-width: 270px;
     padding: 12px 30px;
     margin-left: 0;
+    margin-bottom: 190px;
   }
 }
 

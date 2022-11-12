@@ -22,8 +22,6 @@
 
   @media (max-width: 1023px) {
     padding: 0 24px;
-    column-gap: 26px;
-    row-gap: 30px;
   }
 
   @media (max-width: 767px) {
@@ -44,13 +42,13 @@
   @media (max-width: 1023px) {
     padding-right: 30px;
     padding-bottom: 28px;
-    width: 316px;
+    min-width: 322px;
     min-height: 360px;
   }
 
   @media (max-width: 767px) {
     padding: 29px 25px 35px;
-    width: 272px;
+    width: 100%;
     min-height: 340px;
   }
 }

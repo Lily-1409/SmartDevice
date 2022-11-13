@@ -951,6 +951,10 @@ button,
   display: block;
 }
 
+.modal__close-btn:hover {
+  background-color: rgba(4, 20, 39, 0.3);
+}
+
 .header {
   width: 100%;
   position: fixed;

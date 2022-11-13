@@ -41,10 +41,18 @@ window.addEventListener('DOMContentLoaded', () => {
   const accordionButton = document.querySelectorAll('.footer-section__button');
   const menu = document.querySelectorAll('.footer-section__accordion');
 
+
   for (let i = 0; i < accordionButton.length; i++) {
     let currentButton = accordionButton[i];
     currentButton.addEventListener('click', () => {
       currentButton.classList.toggle('footer-section__button--active');
+
+      if (currentButton.classList.contains('footer-section__button--active')) {
+        accordionButton.forEach(function (item) {
+          item.classList.remove('footer-section__button--active');
+          currentButton.classList.add('footer-section__button--active');
+        });
+      }
 
       let panelMenu = currentButton.nextElementSibling;
 

@@ -284,3 +284,7 @@
 .modal-form__checkbox label input[type="checkbox"]:checked + span::after {
   display: block;
 }
+
+.modal__close-btn:hover {
+  background-color: rgba(4, 20, 39, 0.3);
+}

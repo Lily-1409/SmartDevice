@@ -41,7 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
         formatedInputValue += '-' + inputNumberValue.substring(9, 11);
       }
     } else {
-      formatedInputValue = '+' + inputNumberValue.substring(0, 16);
+      // not russian phone
+      // formatedInputValue = '+' + inputNumberValue.substring(0, 16);
     }
     input.value = formatedInputValue;
   };

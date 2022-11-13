@@ -733,8 +733,9 @@ button,
 .modal__content {
   position: relative;
   width: 500px;
-  padding: 40px;
+  padding: 37px 40px 40px;
   background-color: #00b3ff;
+  border-radius: 3px;
 }
 
 .modal__close-btn {
@@ -788,7 +789,7 @@ button,
   color: #ffffff;
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 4px;
 }
 
 .modal__content p {
@@ -800,7 +801,8 @@ button,
   color: #ffffff;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
+  max-width: 380px;
 }
 
 .modal-form__name label,
@@ -847,8 +849,8 @@ button,
 }
 
 .modal-form__textarea textarea {
-  padding-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 22px;
+  margin-bottom: 12px;
   min-height: 155px;
 }
 
@@ -862,7 +864,7 @@ button,
   flex-direction: column;
 }
 
-.modal-form__button button {
+.modal-form__button input {
   border: none;
   cursor: pointer;
   border-radius: 3px;
@@ -910,8 +912,8 @@ button,
 .modal-form__checkbox label::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 8px;
   display: block;
   width: 15px;
   height: 15px;
@@ -920,17 +922,21 @@ button,
   border: 1px solid #ffffff;
 }
 
+.modal-form__checkbox:hover label::before {
+  background-color: rgba(4, 20, 39, 0.3);
+}
+
 .modal-form__checkbox span {
   position: relative;
   display: block;
-  padding-left: 25px;
+  padding-left: 33px;
 }
 
 .modal-form__checkbox span::after {
   content: " ";
   position: absolute;
-  top: 0;
-  left: 3px;
+  top: 2px;
+  left: 10px;
   -webkit-transform: translateY(80%);
   -ms-transform: translateY(80%);
   transform: translateY(80%);

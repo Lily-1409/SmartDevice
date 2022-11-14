@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
     buttonOpen.textContent = 'Подробнее';
   });
 
-  const accordionButton = document.querySelectorAll('.footer-section__button');
+  const accordionButton = document.querySelectorAll('.footer-section h3');
   const menu = document.querySelectorAll('.footer-section__accordion');
 
 
@@ -68,7 +68,36 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  // const accordionButton = document.querySelectorAll('.footer-section__button');
+  // const menu = document.querySelectorAll('.footer-section__accordion');
 
+
+  // for (let i = 0; i < accordionButton.length; i++) {
+  //   let currentButton = accordionButton[i];
+  //   currentButton.addEventListener('click', () => {
+  //     currentButton.classList.toggle('footer-section__button--active');
+
+  //     if (currentButton.classList.contains('footer-section__button--active')) {
+  //       accordionButton.forEach(function (item) {
+  //         item.classList.remove('footer-section__button--active');
+  //         currentButton.classList.add('footer-section__button--active');
+  //       });
+  //     }
+
+  //     let panelMenu = currentButton.nextElementSibling;
+
+  //     if (panelMenu.style.display === 'block') {
+  //       menu.forEach(function (menuItem) {
+  //         menuItem.style.display = 'none';
+  //       });
+  //     } else {
+  //       menu.forEach(function (menuItem) {
+  //         menuItem.style.display = 'none';
+  //         panelMenu.style.display = 'block';
+  //       });
+  //     }
+  //   });
+  // }
   // const accordionSecondButton = document.querySelectorAll('.footer-section__button');
   // const firstMenu = document.querySelector('.footer-section__menu');
   // const secondMenu = document.querySelector('.footer-section__office');

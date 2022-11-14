@@ -72,7 +72,12 @@
   }
 }
 
+.services__item-link {
+  display: block;
+}
+
 .services-item {
+  display: block;
   background-color: $color-black-pearl;
   background-image: url("../img/promo-background-desktop.jpg");
   background-size: cover;
@@ -212,7 +217,7 @@
   }
 }
 
-.services__item-link::before {
+.services-item::before {
   content: " ";
   position: absolute;
   width: 60px;
@@ -229,7 +234,7 @@
   }
 }
 
-.services__item-link svg {
+.services-item svg {
   position: absolute;
   z-index: 10;
   bottom: 25px;

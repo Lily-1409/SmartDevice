@@ -943,7 +943,7 @@ button,
   display: none;
   width: 8px;
   height: 6px;
-  background-image: url("/img/svg/icon-checked.svg");
+  background-image: url("../img/svg/icon-checked.svg");
   background-repeat: no-repeat;
 }
 
@@ -1291,7 +1291,12 @@ button,
   gap: 85px;
 }
 
+.services__item-link {
+  display: block;
+}
+
 .services-item {
+  display: block;
   background-color: #041827;
   background-image: url("../img/promo-background-desktop.jpg");
   background-size: cover;
@@ -1336,7 +1341,7 @@ button,
   position: absolute;
 }
 
-.services__item-link::before {
+.services-item::before {
   content: " ";
   position: absolute;
   width: 60px;
@@ -1348,7 +1353,7 @@ button,
   right: 0;
 }
 
-.services__item-link svg {
+.services-item svg {
   position: absolute;
   z-index: 10;
   bottom: 25px;
@@ -1427,6 +1432,15 @@ button,
 
 .questions-form__name {
   margin-right: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.questions-form__phone {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .questions-form__name label,
@@ -1437,7 +1451,7 @@ button,
 
 .questions-form__name input,
 .questions-form__phone input {
-  min-width: 275px;
+  width: 100%;
 }
 
 .questions-form__name input,
@@ -1569,7 +1583,7 @@ button,
   display: none;
   width: 8px;
   height: 6px;
-  background-image: url("/img/svg/icon-checked.svg");
+  background-image: url("../img/svg/icon-checked.svg");
   background-repeat: no-repeat;
 }
 
@@ -1822,7 +1836,7 @@ button,
   .advantages__item {
     padding-right: 30px;
     padding-bottom: 28px;
-    min-width: 322px;
+    width: 100%;
     min-height: 360px;
   }
 
@@ -1917,7 +1931,7 @@ button,
   }
 
   .questions__form-wrapper {
-    max-width: unset;
+    max-width: 100%;
   }
 
   .questions__form-wrapper h2 {
@@ -1942,14 +1956,6 @@ button,
     display: -ms-flexbox;
     display: flex;
     width: 50%;
-  }
-
-  .questions-form__name input,
-  .questions-form__phone input {
-    min-width: 320px;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
   }
 
   .questions-form__textarea {
@@ -2160,14 +2166,14 @@ button,
   }
 
   .advantages__item {
-    padding: 29px 25px 35px;
+    padding: 29px 35px 35px 25px;
     width: 100%;
     min-height: 340px;
   }
 
   .advantages__item--shot {
     min-height: 325px;
-    padding-right: 35px;
+    padding-right: 40px;
   }
 
   .advantages__image {
@@ -2268,12 +2274,12 @@ button,
     max-width: 166px;
   }
 
-  .services__item-link::before {
+  .services-item::before {
     width: 40px;
     height: 40px;
   }
 
-  .services__item-link svg {
+  .services-item svg {
     bottom: 15px;
     right: 15px;
   }
@@ -2435,9 +2441,12 @@ button,
   }
 
   .footer-section h3 {
-    margin-top: 22px;
-    margin-bottom: 21px;
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 21px;
     position: relative;
+    top: 0;
+    left: 0;
   }
 
   .footer-section__button {

@@ -42,12 +42,12 @@
   @media (max-width: 1023px) {
     padding-right: 30px;
     padding-bottom: 28px;
-    min-width: 322px;
+    width: 100%;
     min-height: 360px;
   }
 
   @media (max-width: 767px) {
-    padding: 29px 25px 35px;
+    padding: 29px 35px 35px 25px;
     width: 100%;
     min-height: 340px;
   }
@@ -57,7 +57,7 @@
 
   @media (max-width: 767px) {
     min-height: 325px;
-    padding-right: 35px;
+    padding-right: 40px;
   }
 }
 

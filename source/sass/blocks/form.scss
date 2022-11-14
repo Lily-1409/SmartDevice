@@ -43,7 +43,7 @@
   max-width: 582px;
 
   @media (max-width: 1023px) {
-    max-width: unset;
+    max-width: 100%;
   }
 
   @media (max-width: 767px) {
@@ -114,6 +114,7 @@
 
 .questions-form__name {
   margin-right: 20px;
+  flex: 1 1 auto;
 
   @media (max-width: 1023px) {
     margin-right: 30px;
@@ -129,6 +130,8 @@
 }
 
 .questions-form__phone {
+  flex: 1 1 auto;
+
   @media (max-width: 1023px) {
     display: flex;
     width: 50%;
@@ -148,12 +151,7 @@
 
 .questions-form__name input,
 .questions-form__phone input {
-  min-width: 275px;
-
-  @media (max-width: 1023px) {
-    min-width: 320px;
-    flex-grow: 1;
-  }
+  width: 100%;
 }
 
 .questions-form__name input,
@@ -340,7 +338,7 @@
   display: none;
   width: 8px;
   height: 6px;
-  background-image: url("/img/svg/icon-checked.svg");
+  background-image: url("../img/svg/icon-checked.svg");
   background-repeat: no-repeat;
 
   @media (max-width: 767px) {

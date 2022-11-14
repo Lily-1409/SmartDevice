@@ -165,9 +165,12 @@
   }
 
   @media (max-width: 767px) {
-    margin-top: 22px;
-    margin-bottom: 21px;
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 21px;
     position: relative;
+    top: 0;
+    left: 0;
   }
 }
 

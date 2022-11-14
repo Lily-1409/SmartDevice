@@ -64,16 +64,13 @@
     gap: 30px;
     padding-top: 38px;
     padding-left: 26px;
+    padding-right: 10px;
   }
 
   @media (max-width: 767px) {
     padding-top: 28px;
     padding-left: 9px;
   }
-}
-
-.services__item-link {
-  display: block;
 }
 
 .services-item {

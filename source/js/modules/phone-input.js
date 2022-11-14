@@ -22,28 +22,27 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    if (['7', '8', '9'].indexOf(inputNumberValue[0]) > -1) {
-      if (inputNumberValue[0] === '9') {
-        inputNumberValue = '7' + inputNumberValue;
+    formatedInputValue = '+7 (';
+
+    if (inputNumberValue.length === 1) {
+      if (['7', '8'].includes(inputNumberValue) === false) {
+        formatedInputValue += inputNumberValue;
       }
-      let firstSymbos = (inputNumberValue[0] === '8' ? '8' : '+7');
-      formatedInputValue = firstSymbos + '';
-      if (inputNumberValue.length > 1) {
-        formatedInputValue += ' (' + inputNumberValue.substring(1, 4);
-      }
-      if (inputNumberValue.length >= 5) {
-        formatedInputValue += ') ' + inputNumberValue.substring(4, 7);
-      }
-      if (inputNumberValue.length >= 8) {
-        formatedInputValue += '-' + inputNumberValue.substring(7, 9);
-      }
-      if (inputNumberValue.length >= 10) {
-        formatedInputValue += '-' + inputNumberValue.substring(9, 11);
-      }
-    } else {
-      // not russian phone
-      // formatedInputValue = '+' + inputNumberValue.substring(0, 16);
     }
+
+    if (inputNumberValue.length > 1) {
+      formatedInputValue += inputNumberValue.substring(1, 4);
+    }
+    if (inputNumberValue.length >= 5) {
+      formatedInputValue += ') ' + inputNumberValue.substring(4, 7);
+    }
+    if (inputNumberValue.length >= 8) {
+      formatedInputValue += '-' + inputNumberValue.substring(7, 9);
+    }
+    if (inputNumberValue.length >= 10) {
+      formatedInputValue += '-' + inputNumberValue.substring(9, 11);
+    }
+
     input.value = formatedInputValue;
   };
 

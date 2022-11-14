@@ -1,7 +1,7 @@
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: -96px;
+  right: 16px;
   bottom: 0;
   left: 0;
   z-index: 100000;
@@ -283,6 +283,11 @@
 
 .modal-form__checkbox label input[type="checkbox"]:checked + span::after {
   display: block;
+}
+
+.modal__close-btn {
+  top: 19px;
+  right: 17px;
 }
 
 .modal__close-btn:hover {

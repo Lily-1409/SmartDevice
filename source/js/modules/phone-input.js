@@ -66,10 +66,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
+  let onPhoneResult = function (e) {
+    const value = e.target.value;
+
+    if (value.length !== 18) {
+      e.target.value = '';
+    } else {
+      e.target.value = value;
+    }
+  };
+
   for (let i = 0; i < phoneInputs.length; i++) {
     let input = phoneInputs[i];
     input.addEventListener('input', onPhoneInput);
     input.addEventListener('keydown', onPhoneKeyDown);
     input.addEventListener('paste', onPhonePaste);
+    input.addEventListener('blur', onPhoneResult);
   }
 });

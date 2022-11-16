@@ -23,7 +23,7 @@
 
   @media (max-width: 767px) {
     padding-bottom: 88px;
-    margin-left: 7px;
+    margin-left: 10px;
   }
 }
 
@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 10px 0 9px;
+  padding: 25px 10px 0 0;
 
 
   @media (max-width: 1023px) {
@@ -40,17 +40,19 @@
 }
 
 .questions__form-wrapper {
-  max-width: 582px;
+  max-width: 580px;
+  margin-right: 10px;
 
   @media (max-width: 1023px) {
     flex-grow: 1;
     max-width: 100%;
     padding: 0 11px 0 14px;
+    margin-right: 15px;
   }
 
   @media (max-width: 767px) {
-    padding: 0;
     padding: 0 8px 0 1px;
+    margin-right: 4px;
   }
 }
 
@@ -122,7 +124,7 @@
 
   @media (max-width: 1023px) {
     display: flex;
-    width: 50%
+    width: 50%;
   }
 
   @media (max-width: 767px) {
@@ -237,7 +239,7 @@
   }
 }
 
-.questions-form__button button {
+.questions-form__button input {
   border: none;
   cursor: pointer;
   border-radius: 3px;
@@ -293,7 +295,7 @@
   position: relative;
 }
 
-.questions-form__checkbox label::before {
+.questions-form__checkbox span::before {
   content: "";
   position: absolute;
   top: 25%;
@@ -311,10 +313,6 @@
   }
 }
 
-.questions-form__checkbox:hover label::before {
-  background-color: rgba(4, 20, 39, 0.3);
-}
-
 .questions-form__checkbox span {
   position: relative;
   display: block;
@@ -328,6 +326,16 @@
     max-width: 235px;
     padding-left: 0;
   }
+}
+
+.questions-form__checkbox:hover span::before {
+  background-color: rgba(4, 20, 39, 0.3);
+  border: 1px solid rgba(4, 20, 39, 0.3);
+}
+
+.questions-form__checkbox label input[type="checkbox"]:focus + span::before {
+  background-color: rgba(4, 20, 39, 0.3);
+  border: 1px solid rgba(4, 20, 39, 0.3);
 }
 
 .questions-form__checkbox span::after {

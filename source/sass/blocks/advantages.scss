@@ -34,7 +34,7 @@
 
 .advantages__item {
   background-color: transparent;
-  padding: 40px 40px 35px 47px;
+  padding: 40px 40px 35px 40px;
   border: 1px solid $color-whisper-opacity;
   border-left: 5px solid $color-deep-sky-blue;
   min-height: 300px;
@@ -55,7 +55,6 @@
 }
 
 .advantages__item--shot {
-
   @media (max-width: 767px) {
     min-height: 325px;
     padding-right: 40px;

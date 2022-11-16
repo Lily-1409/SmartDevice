@@ -4,11 +4,11 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  margin-left: 31px;
+  margin-left: 26px;
   flex-wrap: wrap;
 
   @media (max-width: 1023px) {
-    margin-right: 7px;
+    margin-right: 22px;
   }
 
   @media (max-width: 767px) {
@@ -19,10 +19,12 @@
 
 .social-networks__item {
   margin-right: 22px;
+
   @media (max-width: 1023px) {
     margin-right: 0;
     margin-left: 20px;
   }
+
   @media (max-width: 767px) {
     margin-right: 11px;
     margin-left: 11px;

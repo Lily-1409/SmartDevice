@@ -733,15 +733,15 @@ button,
 .modal__content {
   position: relative;
   width: 500px;
-  padding: 37px 40px 40px;
+  padding: 39px 40px 42px;
   background-color: #00b3ff;
   border-radius: 3px;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 19px;
+  right: 17px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -814,6 +814,7 @@ button,
 .modal-form__name input,
 .modal-form__phone input {
   margin-bottom: 20px;
+  height: 50px;
 }
 
 .modal-form__name input,
@@ -850,7 +851,7 @@ button,
 
 .modal-form__textarea textarea {
   padding-top: 22px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   min-height: 155px;
 }
 
@@ -875,7 +876,8 @@ button,
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
-  padding: 15px 25px;
+  padding: 0 25px;
+  height: 45px;
   background-color: #041427;
   color: #ffffff;
   min-width: 100%;
@@ -909,7 +911,7 @@ button,
   position: relative;
 }
 
-.modal-form__checkbox label::before {
+.modal-form__checkbox span::before {
   content: "";
   position: absolute;
   top: 2px;
@@ -922,14 +924,20 @@ button,
   border: 1px solid #ffffff;
 }
 
-.modal-form__checkbox:hover label::before {
-  background-color: rgba(4, 20, 39, 0.3);
-}
-
 .modal-form__checkbox span {
   position: relative;
   display: block;
   padding-left: 33px;
+}
+
+.modal-form__checkbox:hover span::before {
+  background-color: rgba(4, 20, 39, 0.3);
+  border: 1px solid rgba(4, 20, 39, 0.3);
+}
+
+.modal-form__checkbox label input[type=checkbox]:focus + span::before {
+  background-color: rgba(4, 20, 39, 0.3);
+  border: 1px solid rgba(4, 20, 39, 0.3);
 }
 
 .modal-form__checkbox span::after {
@@ -951,11 +959,6 @@ button,
   display: block;
 }
 
-.modal__close-btn {
-  top: 19px;
-  right: 17px;
-}
-
 .modal__close-btn:hover {
   background-color: rgba(4, 20, 39, 0.3);
 }
@@ -970,13 +973,10 @@ button,
 }
 
 .header-container {
-  padding: 30px 42px 35px 62px;
+  padding: 30px 42px 35px 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -996,7 +996,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .logo__full {
@@ -1028,6 +1028,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-top: 13px;
 }
 
 .header-contacts__item {
@@ -1068,10 +1069,10 @@ button,
   min-width: 160px;
   color: #f2f5f7;
   padding: 11px 15px;
-  margin-top: -7px;
+  margin-top: 5px;
   background-color: transparent;
   border: 1px solid #f2f5f7;
-  margin-right: 66px;
+  margin-right: 72px;
 }
 
 .promo-section {
@@ -1086,7 +1087,7 @@ button,
 }
 
 .promo {
-  margin-left: 133px;
+  margin-left: 125px;
   padding-top: 294px;
 }
 
@@ -1149,7 +1150,7 @@ button,
 
 .advantages__item {
   background-color: transparent;
-  padding: 40px 40px 35px 47px;
+  padding: 40px 40px 35px 40px;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
   min-height: 300px;
@@ -1297,6 +1298,7 @@ button,
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 85px;
+  margin-right: 15px;
 }
 
 .services-item {
@@ -1307,6 +1309,10 @@ button,
   background-repeat: no-repeat;
   min-height: 650px;
   position: relative;
+}
+
+.services-item:hover {
+  border: 1px solid #2c39f2;
 }
 
 .services-item-one {
@@ -1391,11 +1397,12 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 25px 10px 0 9px;
+  padding: 25px 10px 0 0;
 }
 
 .questions__form-wrapper {
-  max-width: 582px;
+  max-width: 580px;
+  margin-right: 10px;
 }
 
 .questions__form-wrapper h2 {
@@ -1511,7 +1518,7 @@ button,
   align-items: flex-end;
 }
 
-.questions-form__button button {
+.questions-form__button input {
   border: none;
   cursor: pointer;
   border-radius: 3px;
@@ -1557,7 +1564,7 @@ button,
   position: relative;
 }
 
-.questions-form__checkbox label::before {
+.questions-form__checkbox span::before {
   content: "";
   position: absolute;
   top: 25%;
@@ -1570,14 +1577,20 @@ button,
   border: 1px solid #ffffff;
 }
 
-.questions-form__checkbox:hover label::before {
-  background-color: rgba(4, 20, 39, 0.3);
-}
-
 .questions-form__checkbox span {
   position: relative;
   display: block;
   padding-left: 25px;
+}
+
+.questions-form__checkbox:hover span::before {
+  background-color: rgba(4, 20, 39, 0.3);
+  border: 1px solid rgba(4, 20, 39, 0.3);
+}
+
+.questions-form__checkbox label input[type=checkbox]:focus + span::before {
+  background-color: rgba(4, 20, 39, 0.3);
+  border: 1px solid rgba(4, 20, 39, 0.3);
 }
 
 .questions-form__checkbox span::after {
@@ -1609,7 +1622,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 31px;
+  margin-left: 26px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -1637,12 +1650,17 @@ button,
   justify-content: space-between;
 }
 
+.footer__company {
+  max-width: 285px;
+}
+
 .footer__logo {
   margin-bottom: 30px;
+  margin-left: -5px;
 }
 
 .footer-section--menu {
-  margin-left: 112px;
+  margin-left: 100px;
 }
 
 .footer-section__menu {
@@ -1650,13 +1668,13 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 5px;
-  -moz-column-gap: 5px;
-  column-gap: 5px;
+  -webkit-column-gap: 11px;
+  -moz-column-gap: 11px;
+  column-gap: 11px;
 }
 
 .footer-section--office {
-  max-width: 346px;
+  max-width: 349px;
 }
 
 .footer-section__menu ul {
@@ -1664,13 +1682,14 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  max-width: 238px;
 }
 
 .footer-section h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 22px;
-  margin-top: 5px;
+  margin-top: 7px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1682,6 +1701,11 @@ button,
 
 .footer-section__button {
   display: none;
+}
+
+.footer-section__button--active + ul {
+  margin-top: -9px;
+  margin-bottom: 18px;
 }
 
 .footer-section__icon-minus {
@@ -1704,7 +1728,7 @@ button,
 }
 
 .footer-section__item {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .footer-section__link {
@@ -1783,8 +1807,8 @@ button,
   }
 
   .header-contacts {
-    margin-top: -3px;
-    margin-right: 4px;
+    margin-top: 9px;
+    margin-right: 17px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -1946,6 +1970,7 @@ button,
     flex-grow: 1;
     max-width: 100%;
     padding: 0 11px 0 14px;
+    margin-right: 15px;
   }
 
   .questions__form-wrapper h2 {
@@ -1986,7 +2011,7 @@ button,
     justify-content: flex-start;
   }
 
-  .questions-form__button button {
+  .questions-form__button input {
     margin-right: 85px;
   }
 
@@ -1995,7 +2020,7 @@ button,
   }
 
   .social-networks {
-    margin-right: 7px;
+    margin-right: 22px;
   }
 
   .social-networks__item {
@@ -2014,6 +2039,7 @@ button,
   }
 
   .footer__company {
+    max-width: unset;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2034,7 +2060,6 @@ button,
   }
 
   .footer-section {
-    width: 50%;
     padding-top: 12px;
   }
 
@@ -2050,7 +2075,7 @@ button,
   }
 
   .footer-section--office {
-    margin-right: -15px;
+    margin-right: -8px;
   }
 
   .footer-section h3 {
@@ -2113,6 +2138,7 @@ button,
 
   .header-contacts {
     margin-right: 0;
+    margin-top: 14px;
   }
 
   .header-contacts__item {
@@ -2120,7 +2146,6 @@ button,
   }
 
   .header-contacts__item + .header-contacts__item {
-    margin-right: 0;
     margin-left: 39px;
     margin-right: 20px;
   }
@@ -2259,6 +2284,8 @@ button,
   .services-list {
     padding-top: 28px;
     padding-left: 9px;
+    padding-right: 0;
+    margin-right: 8px;
   }
 
   .services-item {
@@ -2299,12 +2326,12 @@ button,
 
   .questions-wrapper {
     padding-bottom: 88px;
-    margin-left: 7px;
+    margin-left: 10px;
   }
 
   .questions__form-wrapper {
-    padding: 0;
     padding: 0 8px 0 1px;
+    margin-right: 4px;
   }
 
   .questions__form-wrapper h2 {
@@ -2357,14 +2384,14 @@ button,
     width: 100%;
   }
 
-  .questions-form__button button {
+  .questions-form__button input {
     margin-right: 0;
     margin-bottom: 24px;
     width: 100%;
     padding-top: 16px;
   }
 
-  .questions-form__checkbox label::before {
+  .questions-form__checkbox span::before {
     top: 7px;
     left: -28px;
   }
@@ -2441,7 +2468,7 @@ button,
   }
 
   .footer-section--office ul {
-    max-width: 320px;
+    max-width: 350px;
   }
 
   .footer-section__menu--active,

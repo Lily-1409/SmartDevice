@@ -201,8 +201,10 @@
 }
 
 .footer-section__button--active + ul {
-  margin-top: -9px;
-  margin-bottom: 18px;
+  @media (max-width: 767px) {
+    margin-top: -9px;
+    margin-bottom: 18px;
+  }
 }
 
 .footer-section__icon-minus {
@@ -210,11 +212,21 @@
 }
 
 .footer-section__button--active .footer-section__icon-plus {
-  display: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .footer-section__button--active .footer-section__icon-minus {
-  display: block;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.footer-section--active {
+  @media (max-width: 767px) {
+    display: block;
+  }
 }
 
 .footer-section__list {

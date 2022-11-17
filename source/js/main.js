@@ -56,14 +56,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
       let panelMenu = currentButton.nextElementSibling;
 
-      if (panelMenu.style.display === 'block') {
+      panelMenu.classList.toggle('footer-section--active');
+
+      if (panelMenu.classList.contains('footer-section--active')) {
         menu.forEach(function (menuItem) {
-          menuItem.style.display = 'none';
+          menuItem.classList.remove('footer-section--active');
+          panelMenu.classList.add('footer-section--active');
         });
       } else {
         menu.forEach(function (menuItem) {
-          menuItem.style.display = 'none';
-          panelMenu.style.display = 'block';
+          menuItem.classList.remove('footer-section--active');
         });
       }
     });
